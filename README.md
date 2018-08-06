@@ -4,14 +4,14 @@ The purpose of this project is to construct an Amazon-like command line interfac
 
 The project utilizes Node.js, mySQL, and the following node modules:
 
--inquirer
--mysql
--console.table
+    nquirer
+    mysql
+    console.table
 
 Prior to use of the application, one must run the included schema.sql file on a properly connected local server. Servernames and passwords must then be updated on each of the .js files. npm install must also be run in the terminal, to install necessary node module files.
 
 
-##bamazonCustomer
+**bamazonCustomer**
 
 This .js file provides the customer front-end experience. Customers can view the list of available products, and select a product and quantity to buy.
 
@@ -22,7 +22,7 @@ This .js file provides the customer front-end experience. Customers can view the
 The program checks to make sure there is adequare inventory prior to accepting the purchase. The database is then updated to reflect the decreased quantity, as well as update the total sales data for the product.
 
 
-##bamazonManager
+**bamazonManager**
 
 This .js file provides a platform for Bamazon managers to monitor and manage inventory. The user is able to select from a number of functions: View Products For Sale, View Low Inventory, Add to Inventory, Add New Product
 
@@ -44,7 +44,7 @@ If the user chooses Add New Product, the user is then prompted for product name,
 
 ![Screen7](/images/screen7.png)
 
-##bamazonSupervisor
+**bamazonSupervisor**
 
 This .js file allows for Bamazon supervisors to access information pertaining to particular departments.
 
