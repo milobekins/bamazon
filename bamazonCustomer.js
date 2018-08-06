@@ -69,11 +69,9 @@ var buyProd = function() {
                     if (err) throw err;
                     console.log("Your Order Has Been Placed!")
                     console.log("Grand Total: " + price);
-                    console.log(price);
                     var query = "UPDATE products SET product_sales = product_sales + " + price + " WHERE item_id = " +answer.idInput;
                     connection.query(query, function(err, res) {
                         if (err) throw err;
-                        console.log(res);
                     });
                     connection.end();
                 });

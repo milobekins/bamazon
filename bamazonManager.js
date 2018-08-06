@@ -59,7 +59,6 @@ inquirer.prompt([
             var query = "UPDATE products SET stock_quantity = stock_quantity + " + answer.addQuantity + " WHERE item_id = " + answer.idInput;
             connection.query(query, function(err, res) {
                 if (err) throw err;
-                console.log(res);
             });
             connection.end();
         })    
@@ -86,12 +85,10 @@ inquirer.prompt([
             var query = "INSERT INTO products (product_name, department_name, price, stock_quantity, product_sales) VALUE ('" + answer.itemName + "','" + answer.itemDepartment + "','" + answer.itemPrice + "','" + answer.itemQuantity + "',0)"
             connection.query(query, function(err, res) {
                 if (err) throw err;
-                console.log(res);
             })
             var query = "INSERT INTO departments (department_name, over_head_costs) VALUE ('" + answer.itemDepartment + "', 1000)"
             connection.query(query, function(err, res) {
                 if (err) throw err;
-                console.log(res);
                 connection.end();
 
             })

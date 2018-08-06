@@ -37,11 +37,10 @@ inquirer.prompt([
                 message: "What is the department name?"
             }
         ]).then(function(answer) { 
-            console.log(answer.departmentName)
             var query = "INSERT INTO departments (department_name, over_head_costs) VALUE ('" + answer.departmentName + "', 1000)";
             connection.query(query, function(err, res) {
                 if (err) throw err;
-                console.log("department added");
+                console.log("Department Added");
                 connection.end();
             })
         });  
