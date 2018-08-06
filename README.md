@@ -1,4 +1,4 @@
-# bamazon
+# **BAMAZON**
 
 The purpose of this project is to construct an Amazon-like command line interface application, utilizing mySQL concepts learned in class.
 
