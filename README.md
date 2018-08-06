@@ -4,7 +4,7 @@ The purpose of this project is to construct an Amazon-like command line interfac
 
 The project utilizes Node.js, mySQL, and the following node modules:
 
-    nquirer
+    inquirer
     mysql
     console.table
 
